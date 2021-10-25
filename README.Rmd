@@ -13,9 +13,10 @@ knitr::opts_chunk$set(
 ```
 
 
-  <!-- badges: start -->
-  [![R build status](https://github.com/Moohan/hscfunctions/workflows/R-CMD-check/badge.svg)](https://github.com/Moohan/hscfunctions/actions)
-  <!-- badges: end -->
+<!-- badges: start -->
+[![R build status](https://github.com/Moohan/hscfunctions/workflows/R-CMD-check/badge.svg)](https://github.com/Moohan/hscfunctions/actions)
+[![codecov](https://codecov.io/github/Moohan/hscfunctions/branch/master/graphs/badge.svg)](https://codecov.io/github/Moohan/hscfunctions)
+<!-- badges: end -->
 
 # hscfunctions
 
