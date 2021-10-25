@@ -58,10 +58,13 @@ jobs:
       - uses: r-lib/actions/setup-r@v1
 
       - name: Install dependencies
-        run: Rscript -e 'install.packages("styler")'
+        run: Rscript -e 'install.packages(c("styler", "desc"))'
 
       - name: Style
         run: Rscript -e 'styler::style_pkg()'
+
+      - name: Normalise DESCRIPTION
+        run: Rscript -e 'desc::desc_normalize()'
 
       - name: commit
         run: |
