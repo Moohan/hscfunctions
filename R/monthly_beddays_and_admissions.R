@@ -3,10 +3,14 @@
 #' Optionally these months can be between two
 #' supplied dates
 #'
-#' @param data a [tibble][tibble::tibble-package] with date variables `admission_date` and `discharge_date`
-#' @param pivot_longer Should the data be left in wide form or pivotted to long form (default)
-#' @param admission_var,discharge_var the `admission_date` and `discharge_date` variables
-#' @param earliest_date,latest_date the earliest and latest dates (months) to compute new variables for
+#' @param data a [tibble][tibble::tibble-package] with date variables
+#' `admission_date` and `discharge_date`
+#' @param pivot_longer Should the data be left in wide form
+#' or pivotted to long form (default)
+#' @param admission_var,discharge_var the
+#' `admission_date` and `discharge_date` variables
+#' @param earliest_date,latest_date the earliest and
+#' latest dates (months) to compute new variables for
 #'
 #' @importFrom stats setNames
 #' @return a [tibble][tibble::tibble-package] with new variables

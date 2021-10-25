@@ -17,13 +17,17 @@ monthly_beddays_and_admissions(
 )
 }
 \arguments{
-\item{data}{a \link[tibble:tibble-package]{tibble} with date variables \code{admission_date} and \code{discharge_date}}
+\item{data}{a \link[tibble:tibble-package]{tibble} with date variables
+\code{admission_date} and \code{discharge_date}}
 
-\item{admission_var, discharge_var}{the \code{admission_date} and \code{discharge_date} variables}
+\item{admission_var, discharge_var}{the
+\code{admission_date} and \code{discharge_date} variables}
 
-\item{earliest_date, latest_date}{the earliest and latest dates (months) to compute new variables for}
+\item{earliest_date, latest_date}{the earliest and
+latest dates (months) to compute new variables for}
 
-\item{pivot_longer}{Should the data be left in wide form or pivotted to long form (default)}
+\item{pivot_longer}{Should the data be left in wide form
+or pivotted to long form (default)}
 }
 \value{
 a \link[tibble:tibble-package]{tibble} with new variables
