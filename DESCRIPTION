@@ -6,6 +6,8 @@ Authors@R:
            comment = c(ORCID = "0000-0002-5380-2029"))
 Description: What the package does (one paragraph).
 License: MIT + file LICENSE
+URL: https://moohan.github.io/hscfunctions/
+BugReports: https://github.com/Moohan/hscfunctions/issues
 Imports:
     dplyr,
     lubridate,
