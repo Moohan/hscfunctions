@@ -6,7 +6,7 @@
 #' @param data a [tibble][tibble::tibble-package] with date variables
 #' `admission_date` and `discharge_date`
 #' @param pivot_longer Should the data be left in wide form
-#' or pivotted to long form (default)
+#' or pivoted to long form (default)
 #' @param admission_var,discharge_var the
 #' `admission_date` and `discharge_date` variables
 #' @param earliest_date,latest_date the earliest and

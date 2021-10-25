@@ -27,7 +27,7 @@ monthly_beddays_and_admissions(
 latest dates (months) to compute new variables for}
 
 \item{pivot_longer}{Should the data be left in wide form
-or pivotted to long form (default)}
+or pivoted to long form (default)}
 }
 \value{
 a \link[tibble:tibble-package]{tibble} with new variables

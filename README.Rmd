@@ -24,7 +24,7 @@ The goal of hscfunctions is to collect functions which I have created for use in
 
 ## Installation
 
-You can install hscfunctions from github with:
+You can install hscfunctions from GitHub with:
 
 ```{r gh-installation, eval = FALSE}
 # install.packages("devtools")

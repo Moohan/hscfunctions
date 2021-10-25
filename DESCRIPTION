@@ -16,9 +16,10 @@ Imports:
     tibble,
     tidyr,
     tidyselect
+Suggests:
+    spelling
 Encoding: UTF-8
+Language: en-GB
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
-Suggests:
-    spelling
