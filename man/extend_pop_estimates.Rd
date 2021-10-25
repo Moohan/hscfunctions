@@ -8,7 +8,7 @@ extend_pop_estimates(pops_df, max_pop_year, year_var = "year")
 }
 \arguments{
 \item{pops_df}{a \link[tibble:tibble-package]{tibble}
-containg population estimates}
+containing population estimates}
 
 \item{max_pop_year}{The latest year required}
 
