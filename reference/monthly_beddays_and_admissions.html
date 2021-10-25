@@ -96,9 +96,17 @@ supplied dates" />
 <li>
   <a href="../reference/index.html">Reference</a>
 </li>
+<li>
+  <a href="../news/index.html">Changelog</a>
+</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        
+        <li>
+  <a href="https://github.com/Moohan/hscfunctions/">
+    <span class="fab fa-github fa-lg"></span>
+     
+  </a>
+</li>
       </ul>
       
     </div><!--/.nav-collapse -->
@@ -116,7 +124,7 @@ supplied dates" />
 with an admission and discharge date
 Optionally these months can be between two
 supplied dates</h1>
-    
+    <small class="dont-index">Source: <a href='https://github.com/Moohan/hscfunctions/blob/master/R/monthly_beddays_and_admissions.R'><code>R/monthly_beddays_and_admissions.R</code></a></small>
     <div class="hidden name"><code>monthly_beddays_and_admissions.Rd</code></div>
     </div>
 
@@ -141,19 +149,23 @@ supplied dates</p>
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
       <th>data</th>
-      <td><p>a <a href='https://tibble.tidyverse.org/reference/tibble-package.html'>tibble</a> with date variables <code>admission_date</code> and <code>discharge_date</code></p></td>
+      <td><p>a <a href='https://tibble.tidyverse.org/reference/tibble-package.html'>tibble</a> with date variables
+<code>admission_date</code> and <code>discharge_date</code></p></td>
     </tr>
     <tr>
       <th>admission_var, discharge_var</th>
-      <td><p>the <code>admission_date</code> and <code>discharge_date</code> variables</p></td>
+      <td><p>the
+<code>admission_date</code> and <code>discharge_date</code> variables</p></td>
     </tr>
     <tr>
       <th>earliest_date, latest_date</th>
-      <td><p>the earliest and latest dates (months) to compute new variables for</p></td>
+      <td><p>the earliest and
+latest dates (months) to compute new variables for</p></td>
     </tr>
     <tr>
       <th>pivot_longer</th>
-      <td><p>Should the data be left in wide form or pivotted to long form (default)</p></td>
+      <td><p>Should the data be left in wide form
+or pivoted to long form (default)</p></td>
     </tr>
     </table>
 
