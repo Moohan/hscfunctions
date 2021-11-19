@@ -2,6 +2,7 @@
 
 export("%>%")
 export(extend_pop_estimates)
+export(is_integer_like)
 export(monthly_beddays_and_admissions)
 export(phs_database_conn)
 importFrom(magrittr,"%>%")
