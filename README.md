@@ -4,7 +4,7 @@
 
 # hscfunctions
 
-The goal of hscfunctions is to collect functions which I have created for use in H & SC work but which aren't covered under the scope of phsmethods and friends.
+The goal of hscfunctions is to collect functions which I have created for use in my Health and Social Care work at Public Health Scotland (PHS) but which aren't covered under the scope of `{phsmethods}` and friends.
 
 ## Documentation
 
@@ -12,9 +12,9 @@ The docs are built by `{pkgdown}` and hosted at: https://moohan.github.io/hscfun
 
 ## Installation
 
-You can install hscfunctions from github with:
+You can install hscfunctions from GitHub with:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("Moohan/hscfunctions")
+# install.packages("remotes")
+remotes::install_github("Moohan/hscfunctions")
 ```
