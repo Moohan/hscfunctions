@@ -1,13 +1,15 @@
 # Workflow derived from https://github.com/r-lib/actions/tree/master/examples
+# and https://fromthebottomoftheheap.net/2020/04/30/rendering-your-readme-with-github-actions/
 # Need help debugging build failures? Start at https://github.com/r-lib/actions#where-to-find-help
 on:
   push:
-    paths: ['**.Rmd']
+    paths:
+      - README.Rmd
 
-name: render-rmarkdown
+name: Render README
 
 jobs:
-  render-rmarkdown:
+  render-README:
     runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
@@ -25,14 +27,12 @@ jobs:
         with:
           extra-packages: rmarkdown
 
-      - name: Render Rmarkdown files
-        run: |
-          RMD_PATH=($(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '[.]Rmd$'))
-          Rscript -e 'for (f in commandArgs(TRUE)) if (file.exists(f)) rmarkdown::render(f)' ${RMD_PATH[*]}
+      - name: Render README
+        run: Rscript -e 'rmarkdown::render("README.Rmd")'
 
       - name: Commit results
         run: |
           git config --local user.name "$GITHUB_ACTOR"
           git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
-          git commit ${RMD_PATH[*]/.Rmd/.md} -m 'Re-build Rmarkdown files' || echo "No changes to commit"
+          git commit README.md -m 'Re-build README.Rmd' || echo "No changes to commit"
           git push origin || echo "No changes to commit"
