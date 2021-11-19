@@ -10,10 +10,13 @@ URL: https://moohan.github.io/hscfunctions/
 BugReports: https://github.com/Moohan/hscfunctions/issues
 Imports:
     dplyr,
+    glue,
     lubridate,
     magrittr,
+    odbc,
     purrr,
     rlang,
+    rstudioapi,
     stats,
     stringr,
     tibble,
